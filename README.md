@@ -31,3 +31,7 @@ $ docker-compose up
 ```
 
 訪問 http://0.0.0.0:5000
+
+### 其他問題
+#### Invalid parameter: "static_path"
+* 這是因為版本的問題，請將 `static_path` 改為 `static_url_path`
