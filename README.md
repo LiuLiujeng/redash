@@ -1,8 +1,8 @@
 # Redash
 
 ### How to build other version?
-可以到 https://version.redash.io/ 查看目前有釋出的版本
-這裡 https://version.redash.io/API/releases 可以下載 release 的內容
+* 可以到 https://version.redash.io/ 查看目前有釋出的版本
+* 這裡 https://version.redash.io/API/releases 可以下載 release 的內容
 
 找到你要的版本後，依據 "download_url" 下載 tar.gz 檔
 建立一個資料夾後，將其解壓縮
@@ -21,9 +21,13 @@ image: "redash/redash:7.0.0.b18042"
 直接用 docker hub 上的 image 可能會遇到 import 對象找不到的問題，遇到的話可以參考[這裡的image](https://github.com/LiuLiujeng/docker-redash)。
 
 接下來要先建立 database
-> docker-compose run --rm server create_db
+```bash
+$ docker-compose run --rm server create_db
+```
 
 沒有錯誤訊息的話，即可執行
-> docker-compose up
+```bash
+$ docker-compose up
+```
 
 訪問 http://0.0.0.0:5000
