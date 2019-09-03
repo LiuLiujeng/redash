@@ -1,4 +1,15 @@
 # Redash
+### How to execute?
+* Please clone repo to local.
+* Create database:
+```bash
+$ docker-compose run --rm server create_db
+```
+* Run server:
+```bash
+$ docker-compose up
+```
+* Visit http://0.0.0.0:5000
 
 ### How to build other version?
 * 可以到 https://version.redash.io/ 查看目前有釋出的版本
